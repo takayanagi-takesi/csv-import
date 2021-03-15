@@ -1,4 +1,5 @@
 class ImportCsv
+  
   def self.import(path)
     CSV.foreach(path, headers: true) do |row|
       User.create!(
